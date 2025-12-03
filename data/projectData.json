@@ -1,0 +1,83 @@
+{
+  "0": {
+    "title": "🪑 IKEA",
+    "type": "팀 프로젝트",
+    "tech": "React, Redux Toolkit, MUI/Bootstrap",
+    "feature": "상품 목록/상세, 장바구니, 리뷰, 마이페이지",
+    "point": "SPA 구조, Redux 상태 관리, 반응형 UI",
+    "files": "App.js, store.js, Cart.js, Detail.js",
+    "image": "images/thumbnail01.JPG"
+  },
+  "1": {
+    "title": "💄 Two slash four",
+    "type": "개인 프로젝트",
+    "tech": "React, Redux Toolkit, MUI/Bootstrap",
+    "feature": "상품 검색/필터링, 리뷰",
+    "point": "UI 컴포넌트 재사용, 반응형 구조",
+    "files": "App.js, Filter.js, Search.js",
+    "image": "images/thumbnail01.JPG"
+  },
+  "2": {
+    "title": "🔩 현대제철",
+    "type": "개인 프로젝트",
+    "tech": "React Native, Styled-components",
+    "feature": "모바일 UI 컴포넌트, 네이티브 반응형",
+    "point": "재사용 가능한 컴포넌트 설계",
+    "files": "App.js, Components.js",
+    "image": "images/thumbnail02.JPG"
+  },
+  "3": {
+    "title": "🔩 현대제철",
+    "type": "개인 프로젝트",
+    "tech": "React Native, Styled-components",
+    "feature": "모바일 UI 컴포넌트, 네이티브 반응형",
+    "point": "재사용 가능한 컴포넌트 설계",
+    "files": "App.js, Components.js",
+    "image": "images/thumbnail02.JPG"
+  },
+  "4": {
+    "title": "🪑 IKEA",
+    "type": "팀 프로젝트",
+    "tech": "React, Redux Toolkit, MUI/Bootstrap",
+    "feature": "상품 목록/상세, 장바구니, 리뷰, 마이페이지",
+    "point": "SPA 구조, Redux 상태 관리, 반응형 UI",
+    "files": "App.js, store.js, Cart.js, Detail.js",
+    "image": "images/thumbnail01.JPG"
+  },
+  "5": {
+    "title": "💄 Two slash four",
+    "type": "개인 프로젝트",
+    "tech": "React, Redux Toolkit, MUI/Bootstrap",
+    "feature": "상품 검색/필터링, 리뷰",
+    "point": "UI 컴포넌트 재사용, 반응형 구조",
+    "files": "App.js, Filter.js, Search.js",
+    "image": "images/thumbnail01.JPG"
+  },
+  "6": {
+    "title": "🔩 현대제철",
+    "type": "개인 프로젝트",
+    "tech": "React Native, Styled-components",
+    "feature": "모바일 UI 컴포넌트, 네이티브 반응형",
+    "point": "재사용 가능한 컴포넌트 설계",
+    "files": "App.js, Components.js",
+    "image": "images/thumbnail02.JPG"
+  },
+  "7": {
+    "title": "💄 Two slash four",
+    "type": "개인 프로젝트",
+    "tech": "React, Redux Toolkit, MUI/Bootstrap",
+    "feature": "상품 검색/필터링, 리뷰",
+    "point": "UI 컴포넌트 재사용, 반응형 구조",
+    "files": "App.js, Filter.js, Search.js",
+    "image": "images/thumbnail01.JPG"
+  },
+  "8": {
+    "title": "🔩 현대제철",
+    "type": "개인 프로젝트",
+    "tech": "React Native, Styled-components",
+    "feature": "모바일 UI 컴포넌트, 네이티브 반응형",
+    "point": "재사용 가능한 컴포넌트 설계",
+    "files": "App.js, Components.js",
+    "image": "images/thumbnail02.JPG"
+  }
+}
