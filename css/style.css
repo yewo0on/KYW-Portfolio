@@ -363,13 +363,13 @@ button:hover {
   background: url(../images/nAFeekFegno.png) no-repeat;
 }
 
-.intro__inner::after {
+.intro__text::after {
   content: "";
   display: block;
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 62%;
+  top: 130%;
   width: 160px;
   height: 160px;
   background: url(../images/notebook__icon.png) no-repeat;
@@ -742,9 +742,7 @@ button:hover {
    project
 ================================*/
 .project__inner {
-  /* width: 75%;
-  margin: 0 auto; */
-  max-width: 1200px;
+  width: 75%;
   margin: 0 auto;
   padding: 50px 20px;
 }
@@ -1079,24 +1077,11 @@ button:hover {
   display: block;
 }
 
-/* 썸네일 기본 숨김, 커서 따라다니게 */
-/* .thumbnailPreview {
-  position: fixed;
-  pointer-events: none; 
-  display: none; 
-  width: 200px;
-  border-radius: 8px;
-  overflow: hidden;
-  z-index: 9999; 
-  transform: translate(-50%, -100%); 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-} */
-
 /* ===============================
    contact
 ================================*/
 .contact__inner {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding: 200px 0;
 }
