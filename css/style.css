@@ -178,6 +178,26 @@ button:hover {
   background-color: var(--btn-bg-hover);
 } */
 
+/* ===============================
+   Top Button
+================================*/
+.top-btn {
+  display: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 9999;
+}
+.top-btn__wrap {
+  width: 50px;
+  height: 50px;
+  background: url(../images/Up.png) no-repeat center/cover;
+  cursor: pointer;
+}
+.top-btn.on {
+  display: block;
+}
+
 /* header */
 .header {
   position: absolute; /* 처음엔 문서 흐름 위에 얹기 */
@@ -211,14 +231,14 @@ button:hover {
 .header__logo {
   flex: 1;
   font-size: var(--font-lg);
-  margin-left: 25px;
-  padding-bottom: 5px;
+  /* margin-left: 25px;
+  padding-bottom: 5px; */
 }
 .header__logo-link {
   position: relative;
   font-size: 15px;
 }
-.header__logo-link::before {
+/* .header__logo-link::before {
   content: "";
   display: block;
   position: absolute;
@@ -228,7 +248,7 @@ button:hover {
   height: 45px;
   background: url(../images/33668157-a0a7-46cd-921b-29f9b62a357f.png) no-repeat
     center / cover;
-}
+} 
 
 .header__logo-link:hover {
   color: #fff;
@@ -244,6 +264,7 @@ button:hover {
   height: 23px;
   background: #444;
 }
+  */
 .header__nav {
   flex: 3;
 }
@@ -847,6 +868,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+  overflow: hidden;
 }
 .project__card {
   display: flex;
@@ -856,6 +878,28 @@ button:hover {
   background-color: #fff;
   border-radius: 20px;
 }
+.project__card {
+  z-index: 1;
+}
+.project__card:nth-child(1) {
+  z-index: 6;
+}
+.project__card:nth-child(2) {
+  z-index: 5;
+}
+.project__card:nth-child(3) {
+  z-index: 4;
+}
+.project__card:nth-child(4) {
+  z-index: 3;
+}
+.project__card:nth-child(5) {
+  z-index: 2;
+}
+.project__card:nth-child(6) {
+  z-index: 1;
+}
+
 .project__text {
   position: relative;
 }

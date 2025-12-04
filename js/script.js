@@ -29,6 +29,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /** 프로필 스크롤 이벤트 적용 */
+  const slides = document.querySelectorAll(".about__boxes .swiper-slide");
+
+  // 하나씩 애니메이션 적용
+  gsap.fromTo(
+    slides,
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power3.out",
+      stagger: 0.3, // ← 딜레이 대신 stagger 사용
+      scrollTrigger: {
+        trigger: ".about__boxes",
+        start: "top 70%",
+      },
+    }
+  );
+
+  /** 카드 스크롤 이벤트 적용 */
+  const cards = document.querySelectorAll("#projectCards .project__card");
+
+  // 각 카드에 애니메이션 적용
+  cards.forEach((card, idx) => {
+    gsap.from(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%", // 카드가 뷰포트 아래에서 올라올 때 시작
+        toggleActions: "play none none reverse",
+      },
+      opacity: 0,
+      y: 50,
+      duration: 0.7,
+      ease: "power2.out",
+      delay: idx * 0.05, // 자연스러운 약간의 딜레이
+    });
+  });
+
+  const topBtn = document.querySelector("#top-btn");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      // 스크롤이 100px 넘으면 on
+      topBtn.classList.add("on");
+    } else {
+      // 스크롤이 100px 이하면 on을 없앰
+      topBtn.classList.remove("on");
+    }
+  });
+
+  topBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
   /** 이메일 복사 버튼 */
   document.getElementById("copyEmail").addEventListener("click", () => {
     const email = "ywon0127@gmail.com";
@@ -38,11 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /** 프로젝트 종류 필터링 */
   const projectCards = document.querySelectorAll(
     "#projectList .project__item, #projectCards .project__card"
   );
 
-  /** 프로젝트 종류 필터링 */
   const pjFilterBtns = document.querySelectorAll(
     "#projectsFilter .filter__btn"
   );
